@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ashok | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #94a3b8;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    h3 {
+      color: #38bdf8;
+      margin-top: 10px;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 15px auto;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: black;
+    }
+
+    .btn-primary:hover {
+      background: #0ea5e9;
+    }
+
+    .btn-outline {
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+    }
+
+    .btn-outline:hover {
+      background: #38bdf8;
+      color: black;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #020617;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.08);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #38bdf8;
+      display: block;
+      margin: 8px auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #0f172a;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+    }
+
+    .card p {
+      color: #94a3b8;
+      margin: 10px 0;
+    }
+
+    .skills, .achievements {
+      text-align: center;
+    }
+
+    .skills p, .achievements p {
+      color: #94a3b8;
+    }
+
+    .leetcode {
+      display: flex;
+      justify-content: center;
+    }
+
+    .leetcode img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+
+    @media(max-width: 768px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h3>Ashok</h3>
+  <div>
+    <a href="#projects">Projects</a>
+    <a href="#leetcode">LeetCode</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <img src="profile.jpg" class="profile-img">
+
+  <h1>Hi, I'm Ashok 👋</h1>
+  <h3>Java • DSA • AI Enthusiast</h3>
+
+  <p>
+    Passionate problem solver with 650+ coding problems solved across LeetCode, CodeChef, and HackerRank.
+    Strong in Data Structures and Algorithms using Java, with hands-on experience in AI-based applications
+    and building efficient solutions.
+  </p>
+
+  <div class="buttons">
+    <a href="https://github.com/YOUR_USERNAME" class="btn-primary">GitHub</a>
+    <a href="https://linkedin.com/in/YOUR_PROFILE" class="btn-outline">LinkedIn</a>
+    <a href="https://leetcode.com/YOUR_USERNAME" class="btn-outline">LeetCode</a>
+    <a href="resume.pdf" class="btn-primary" download>Download Resume</a>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="container">
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <div class="card">
+      <h3>Agentic AI Assistant</h3>
+      <p>Multi-agent NLP system for task automation and scheduling.</p>
+      <p><b>Tech:</b> Python, Flask, APIs</p>
+    </div>
+
+    <div class="card">
+      <h3>Contract Simplifier</h3>
+      <p>AI tool to simplify complex legal documents using NLP.</p>
+      <p><b>Tech:</b> Python, Streamlit, Transformers</p>
+    </div>
+  </div>
+</section>
+
+<!-- LeetCode -->
+<section id="leetcode" class="container">
+  <h2>LeetCode Stats</h2>
+
+  <p style="text-align:center; color:#94a3b8;">
+    440+ problems solved on LeetCode
+  </p>
+
+  <div class="leetcode">
+    <img src="https://leetcard.jacoblin.cool/YOUR_USERNAME?theme=dark&font=Arial">
+  </div>
+
+  <div style="text-align:center; margin-top:15px;">
+    <a href="https://leetcode.com/YOUR_USERNAME" class="btn-outline">
+      View Profile
+    </a>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="container skills">
+  <h2>Skills</h2>
+  <p>Java • Python • JavaScript • React • Flask • AWS • DSA • Machine Learning</p>
+</section>
+
+<!-- Achievements -->
+<section class="container achievements">
+  <h2>Achievements</h2>
+  <p>✔ 650+ coding problems solved</p>
+  <p>✔ Strong in Data Structures & Algorithms</p>
+  <p>✔ AWS & AI/ML Hands-on Experience</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container">
+  <h2>Contact</h2>
+  <p>Feel free to reach out for opportunities or collaboration.</p>
+
+  <div style="text-align:center; margin-top:15px;">
+    <a href="mailto:harijanaashok8061@gmail.com" class="btn-primary">
+      Send Email
+    </a>
+  </div>
+
+  <p style="text-align:center; margin-top:10px; color:#94a3b8;">
+    harijanaashok8061@gmail.com
+  </p>
+</section>
+
+<footer>
+  © 2026 Ashok | Portfolio
+</footer>
+
+</body>
+</html>
